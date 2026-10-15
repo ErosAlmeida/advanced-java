@@ -19,5 +19,6 @@ public class WildCardsMain {
     public static void prepararBebidas(List<Bebida> bebidas) {
         bebidas.add(new Cafe());
         bebidas.add(new Cha());
+        System.out.println("testes");
     }
 }
