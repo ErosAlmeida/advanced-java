@@ -11,14 +11,19 @@ public class WildCardsMain {
 
         prepararBebidas(bebidas);
 
+
+        List<Cafe> cafes = new ArrayList<Cafe>();
+        cafes.add(new Cafe());
+        prepararBebidas(cafes);
+
+    }
+
+    public static void prepararBebidas(List<? extends Bebida> bebidas) {
         for (Bebida b : bebidas) {
             b.preparar();
         }
+
     }
 
-    public static void prepararBebidas(List<Bebida> bebidas) {
-        bebidas.add(new Cafe());
-        bebidas.add(new Cha());
-        System.out.println("testes");
-    }
+
 }
