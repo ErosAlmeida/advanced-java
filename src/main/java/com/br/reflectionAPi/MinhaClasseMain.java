@@ -22,7 +22,5 @@ public class MinhaClasseMain {
                 m.invoke(mc);
             }
         }
-
-
     }
 }
