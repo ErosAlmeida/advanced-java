@@ -7,7 +7,13 @@ public class CollectionMain {
     public static void main( String[] args ) {
         List<Integer> list = Arrays.asList(4, 5, 2 , 0 , 1);
 
-       list.forEach(e -> System.out.println(e));
+
+
+       list.sort((x,y) -> x.compareTo(y));
+
+      // list.removeAll(e -> e * 2);
+        list.forEach(e -> System.out.println(e));
+
     }
 
 
