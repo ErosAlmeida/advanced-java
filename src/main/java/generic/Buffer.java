@@ -14,6 +14,7 @@ public class Buffer<T> {
     public T remover(){
         T elemento = list.get(0);
         list.remove(0);
+        System.out.println("REMOVED ELEMENTO: " + elemento);
         return elemento;
     }
 }
