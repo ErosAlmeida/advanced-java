@@ -4,13 +4,21 @@ public class Ex01 {
     public static void main( String[] args ) {
         String nome = "Java";
 
-        System.out.println(nome.charAt(0));
-        System.out.println(nome.length());
+//        String haystack = "sadbutsad";
+//        String needle = "sad";
+//        System.out.println(haystack.indexOf(needle));
+//
+//        String haystackLet = "leetcode";
+//        System.out.println(haystackLet.indexOf("leeto"));
 
-        String palavra = "Java é legal";
-        System.out.println(palavra.indexOf("legal"));
+        String haystack = "sadbutsad";
+        String needle = "sad";
+        System.out.println(haystack.indexOf(needle));
 
-        String tema = "java";
-        System.out.println(palavra.indexOf("python"));
-    }
+        String haystackLet = "leetcode";
+        System.out.println(haystackLet.indexOf(haystack));
+
+
+      //  return haystack;
+  }
 }
