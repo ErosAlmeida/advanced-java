@@ -1,14 +1,41 @@
 package com.br.testList;
 
+import java.util.ArrayList;
+
+class Solution {
+    public boolean isPalindrome(String s) {
+
+        s = s.replaceAll("[^a-zA-Z0-9]", "");;
+        if (s.length() <= 1) {
+            return true;
+        }
+
+        String testPolindromo = s.toUpperCase();
+        ArrayList <Character> first = new ArrayList<>();
+        ArrayList <Character> second = new ArrayList<>();
+
+        for (int i = testPolindromo.length()-1; i >= 0; i--) {
+                    second.add(testPolindromo.charAt(i));
+        }
+
+        for (int i = 0; i < testPolindromo.length(); i++) {
+            first.add(testPolindromo.charAt(i));
+        }
+
+        for (int i = 0; i < first.size(); i++) {
+            if (first.get(i) != second.get(i)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
 public class ValidPalindrome {
     public static void main(String[] args) {
-        boolean palindrome = true;
-        String s = palindrome ? "palindrome" : "not palindrome";
 
-        String palindromeStr = "A man, a plan, a canal: Panama";
-        System.out.println(palindromeStr);
-        String palindromeStr2 = "race a car";
-        System.out.println(palindromeStr2);
-
+        Solution s = new Solution();
+        boolean result = s.isPalindrome("0p");
+        System.out.println(result);
     }
 }
