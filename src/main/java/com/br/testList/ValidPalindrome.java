@@ -2,7 +2,7 @@ package com.br.testList;
 
 import java.util.ArrayList;
 
-class Solution {
+class Solution2 {
     public boolean isPalindrome(String s) {
 
         s = s.replaceAll("[^a-zA-Z0-9]", "");;
@@ -35,7 +35,7 @@ public class ValidPalindrome {
     public static void main(String[] args) {
 
         Solution s = new Solution();
-        boolean result = s.isPalindrome("0p");
-        System.out.println(result);
+       // boolean result = s.isPalindrome("0p");
+       // System.out.println(result);
     }
 }
